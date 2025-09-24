@@ -8,14 +8,20 @@ The goal is to understand customer value, cohort dynamics, and churn/retention p
 
 ## 📊 Query 1 — Customer Lifetime Value (LTV)
 
-**Story:**  
-Customers were grouped into segments based on spending percentiles:  
+**Goal:** To understand who our **low, mid,** and **high value customers** are based on spending, and determine their consumer LTV.
+
+**Process:**  
+1. Customers were grouped into 1 of 3 segments based on spending percentiles:  
 - **High Value**: ≥ 75th percentile  
 - **Mid Value**: 25th–75th percentile  
-- **Low Value**: ≤ 25th percentile  
+- **Low Value**: ≤ 25th percentile
+
+2. We aggreated the segments to calculate how much they spent on average over all of their unique purchases.
 
 **Insight:**  
-High-value customers spend dramatically more on average compared to mid- and low-value customers. This shows where most of the company’s lifetime value comes from.
+High-value customers spend dramatically more on average compared to mid and low-value customers. This shows where most of the company’s lifetime value comes from.
+
+<br>
 
 <img src="./Images/1_segment_ltv_mix.png" alt="Average LTV" width="500"/>
 
@@ -25,11 +31,16 @@ High-value customers spend dramatically more on average compared to mid- and low
 
 ## 📈 Query 2 — Cohort Analysis
 
-**Story:**  
-Customers are segmented by their **cohort year** (the year of first purchase). We measure both **customer growth** and **revenue per customer** at acquisition.
+**Goal:** To group customers by **Cohort Year** (first purchase year) to determine what percentage of customers are new every year.
+
+**Process:**  
+1. Customers were aggregated by their year of first purchase.
+2. **Customer growth** and **Revenue Per Customer** were calculated and compared in each year.
 
 **Insight:**  
 While the company is acquiring more customers each year, the **revenue per customer is slowly declining**. This suggests we are losing pre-existing customers faster and missing out on maximizing lifetime value.
+
+<br>
 
 <img src="./Images/2_cohort_customer_revenue.png" alt="Average LTV" width="500"/>
 
@@ -39,14 +50,17 @@ While the company is acquiring more customers each year, the **revenue per custo
 
 ## 🔄 Query 3 — Churn & Retention
 
-**Story:**  
-We classified customers as **Active** or **Churned** based on whether they purchased in the last 6 months relative to the dataset’s snapshot date.  
+**Goal:** To determine which percentage of our customers are **Churned** (havent purchased in last 6 months) and which percentage are **Active** (have purchased in last 6 months).
+
+**Process:**  
+1. Each customer's last purchse date was queried. 
+2. Classified as **Active** or **Churned** based on whether they purchased in the last 6 months relative to the dataset’s snapshot date.  
 
 **Insight:**  
-The majority of customers are **Churned**, highlighting missed opportunities to **re-monetize existing customers**.  
-This points toward strategies like re-engagement campaigns, loyalty programs, or personalized marketing to lift retention.
+The majority of customers are **Churned**, highlighting missed opportunities to **re-monetize existing customers**. This points toward strategies like re-engagement campaigns, loyalty programs, or personalized marketing to lift retention.
 
-**Visualization:**  
+<br>
+
 <img src="./Images/3_churned_active_cx.png" alt="Average LTV" width="500"/>
 
 **SQL:** See [`SQL Query #3`](./Queries/3_retension_analysis.sql) 
@@ -54,15 +68,11 @@ This points toward strategies like re-engagement campaigns, loyalty programs, or
 ---
 
 ## 🛠 Tech Stack
-- **SQL**: Data wrangling, cohort definitions, churn classification  
-- **Python (Pandas, Matplotlib)**: Visualization and analysis  
-- **GitHub**: Project hosting & version control  
+- **SQL**: Views & CTE's to define complex queries  
+- **ChatGPT**: Generating visualizations 
+- **GitHub**: Project hosting & organizaiton
 
 ---
 
-## 🚀 Next Steps
-- Package this repo with `/sql`, `/images`, and `README.md`  
-- Share insights on **LinkedIn**, highlighting:  
-  - How SQL is used for real business questions  
-  - Key findings on customer value, cohort health, and retention gaps  
-  - Potential strategies for improving long-term revenue
+## 🚀 What I learned:
+- 
