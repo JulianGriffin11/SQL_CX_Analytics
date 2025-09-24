@@ -20,10 +20,7 @@ High-value customers spend dramatically more on average compared to mid- and low
 **SQL:** See [`SQL Query #1`](./Queries/1_customer_segmentation.sql)  
 
 **Visualizations:**  
-- Average LTV by segment:  
-  ![Average LTV](images/q1_avg_ltv_by_segment.png)  
-- Customer distribution across segments:  
-  ![Customer Distribution](images/q1_customer_count_distribution.png)  
+<img src="./Images/1_segment_ltv_mix.png" alt="Average LTV" width="500"/>
 
 ---
 
@@ -38,10 +35,7 @@ While the company is acquiring more customers each year, the **revenue per custo
 **SQL:** See [`SQL Query #2`](./Queries/2_cohort_analysis.sql)  
 
 **Visualizations:**  
-- Total customers by cohort year:  
-  ![Total Customers](images/q2_total_customers_by_cohort.png)  
-- Revenue per customer by cohort year:  
-  ![Revenue per Customer](images/q2_revenue_per_customer_by_cohort.png)  
+<img src="./Images/2_cohort_customer_revenue.png" alt="Average LTV" width="500"/>
 
 ---
 
@@ -57,8 +51,7 @@ This points toward strategies like re-engagement campaigns, loyalty programs, or
 **SQL:** See [`SQL Query #3`](./Queries/3_retension_analysis.sql) 
 
 **Visualization:**  
-- Retention mix (Active vs. Churned) by cohort:  
-  ![Retention Mix](images/q3_retention_mix_100pct.png)  
+<img src="./Images/3_churned_active_cx.png" alt="Average LTV" width="500"/>
 
 ---
 
