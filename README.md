@@ -17,10 +17,9 @@ Customers were grouped into segments based on spending percentiles:
 **Insight:**  
 High-value customers spend dramatically more on average compared to mid- and low-value customers. This shows where most of the company’s lifetime value comes from.
 
-**SQL:** See [`SQL Query #1`](./Queries/1_customer_segmentation.sql)  
-
-**Visualizations:**  
 <img src="./Images/1_segment_ltv_mix.png" alt="Average LTV" width="500"/>
+
+**SQL:** See [`SQL Query #1`](./Queries/1_customer_segmentation.sql)  
 
 ---
 
@@ -32,10 +31,9 @@ Customers are segmented by their **cohort year** (the year of first purchase). W
 **Insight:**  
 While the company is acquiring more customers each year, the **revenue per customer is slowly declining**. This suggests we are losing pre-existing customers faster and missing out on maximizing lifetime value.
 
-**SQL:** See [`SQL Query #2`](./Queries/2_cohort_analysis.sql)  
-
-**Visualizations:**  
 <img src="./Images/2_cohort_customer_revenue.png" alt="Average LTV" width="500"/>
+
+**SQL:** See [`SQL Query #2`](./Queries/2_cohort_analysis.sql)  
 
 ---
 
@@ -48,10 +46,10 @@ We classified customers as **Active** or **Churned** based on whether they purch
 The majority of customers are **Churned**, highlighting missed opportunities to **re-monetize existing customers**.  
 This points toward strategies like re-engagement campaigns, loyalty programs, or personalized marketing to lift retention.
 
-**SQL:** See [`SQL Query #3`](./Queries/3_retension_analysis.sql) 
-
 **Visualization:**  
 <img src="./Images/3_churned_active_cx.png" alt="Average LTV" width="500"/>
+
+**SQL:** See [`SQL Query #3`](./Queries/3_retension_analysis.sql) 
 
 ---
 
