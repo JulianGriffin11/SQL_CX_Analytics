@@ -1,22 +1,24 @@
-# Customer Analytics
+#  💳 Retail Customer Analytics 💳
 
-This project dissects fictitious company sales and customer data using SQL queries and visualizations. 
- 
-The goal is to understand customer value, cohort dynamics, and churn/retention patterns that drive long-term revenue.
+---
+
+## 📖 Background
+This project was built by following Luke Barousse's structured SQL Intermediate guide on a simulated retail dataset.  
+
+The intent was to replicate how a real company might explore customer lifetime value, acquisition cohorts, and churn trends — turning raw transactions into actionable business insights. By combining SQL with visualization, the project demonstrates end-to-end analytical thinking: from query design to storytelling.
 
 ---
 
 ## 📊 Query 1 — Customer Lifetime Value (LTV)
 
-**Goal:** To understand who our **low, mid,** and **high value customers** are based on spending, and determine their consumer LTV.
+**Goal:** Understand who our **low, mid,** and **high value customers** are based on spending, and determine their consumer LTV.
 
 **Process:**  
 1. Customers were grouped into 1 of 3 segments based on spending percentiles:  
-- **High Value**: ≥ 75th percentile  
-- **Mid Value**: 25th–75th percentile  
-- **Low Value**: ≤ 25th percentile
-
-2. We aggreated the segments to calculate how much they spent on average over all of their unique purchases.
+   - **High Value**: ≥ 75th percentile  
+   - **Mid Value**: 25th–75th percentile  
+   - **Low Value**: ≤ 25th percentile  
+2. Aggregated the segments to calculate how much they spent on average over all of their unique purchases.
 
 **Insight:**  
 High-value customers spend dramatically more on average compared to mid and low-value customers. This shows where most of the company’s lifetime value comes from.
@@ -25,16 +27,16 @@ High-value customers spend dramatically more on average compared to mid and low-
 
 <img src="./Images/1_segment_ltv_mix.png" alt="Average LTV" width="500"/>
 
-**SQL:** See [`SQL Query #1`](./Queries/1_customer_segmentation.sql)  
+🚀 [Dive deeper into my 1st SQL Query](./Queries/1_customer_segmentation.sql)
 
 ---
 
 ## 📈 Query 2 — Cohort Analysis
 
-**Goal:** To group customers by **Cohort Year** (first purchase year) to determine what percentage of customers are new every year.
+**Goal:** Group customers by **Cohort Year** (first purchase year) to determine what percentage of customers are new every year.
 
 **Process:**  
-1. Customers were aggregated by their year of first purchase.
+1. Customers were aggregated by their year of first purchase.  
 2. **Customer growth** and **Revenue Per Customer** were calculated and compared in each year.
 
 **Insight:**  
@@ -42,18 +44,18 @@ While the company is acquiring more customers each year, the **revenue per custo
 
 <br>
 
-<img src="./Images/2_cohort_customer_revenue.png" alt="Average LTV" width="500"/>
+<img src="./Images/2_cohort_customer_revenue.png" alt="Revenue per Customer" width="500"/>
 
-**SQL:** See [`SQL Query #2`](./Queries/2_cohort_analysis.sql)  
+🚀 [Dive deeper into my 2nd SQL Query](./Queries/2_cohort_analysis.sql)
 
 ---
 
 ## 🔄 Query 3 — Churn & Retention
 
-**Goal:** To determine which percentage of our customers are **Churned** (havent purchased in last 6 months) and which percentage are **Active** (have purchased in last 6 months).
+**Goal:** Determine which percentage of our customers are **Churned** (haven’t purchased in last 6 months) and which percentage are **Active** (have purchased in last 6 months).
 
 **Process:**  
-1. Each customer's last purchse date was queried. 
+1. Each customer's last purchase date was queried.  
 2. Classified as **Active** or **Churned** based on whether they purchased in the last 6 months relative to the dataset’s snapshot date.  
 
 **Insight:**  
@@ -61,18 +63,19 @@ The majority of customers are **Churned**, highlighting missed opportunities to 
 
 <br>
 
-<img src="./Images/3_churned_active_cx.png" alt="Average LTV" width="500"/>
+<img src="./Images/3_churned_active_cx.png" alt="Retention Mix" width="500"/>
 
-**SQL:** See [`SQL Query #3`](./Queries/3_retension_analysis.sql) 
+🚀 [Dive deeper into my 3rd SQL Query](./Queries/3_retension_analysis.sql)
 
 ---
 
 ## 🛠 Tech Stack
-- **SQL**: Views & CTE's to define complex queries  
-- **ChatGPT**: Generating visualizations 
-- **GitHub**: Project hosting & organizaiton
+- **SQL**: Views & CTEs to define complex queries  
+- **Chat GPT**: Generating visualizations  
+- **GitHub**: Project hosting & organization  
 
 ---
 
-## 🚀 What I learned:
-- 
+## 🚀 What I Learned
+- How to **design queries around business problems** (segmentation, cohorts, churn).  
+- How to **combine SQL with visual storytelling** so insights are accessible to non-technical audiences.   
