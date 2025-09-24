@@ -1,0 +1,1 @@
+{"resources":{"Scripts/Script.sql":{"default-datasource":"postgres-jdbc-1996cd3680a-4c23804303f7f4f","default-catalog":"contoso_100k","default-schema":"public"},"Scripts/Test_Script.sql":{"default-datasource":"postgres-jdbc-1996cd3680a-4c23804303f7f4f","default-catalog":"contoso_100k","default-schema":"public"}}}
