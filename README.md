@@ -6,7 +6,7 @@ The goal is to understand customer value, cohort dynamics, and churn/retention p
 
 ---
 
-## 📊 Query 1 — Customer Segmentation by Lifetime Value (LTV)
+## 📊 Query 1 — Customer Lifetime Value (LTV)
 
 **Story:**  
 Customers were grouped into segments based on spending percentiles:  
@@ -27,7 +27,7 @@ High-value customers spend dramatically more on average compared to mid- and low
 
 ---
 
-## 📈 Query 2 — Cohort Analysis (First Purchase Year)
+## 📈 Query 2 — Cohort Analysis
 
 **Story:**  
 Customers are segmented by their **cohort year** (the year of first purchase). We measure both **customer growth** and **revenue per customer** at acquisition.
@@ -45,7 +45,7 @@ While the company is acquiring more customers each year, the **revenue per custo
 
 ---
 
-## 🔄 Query 3 — Churn & Retention by Cohort
+## 🔄 Query 3 — Churn & Retention
 
 **Story:**  
 We classified customers as **Active** or **Churned** based on whether they purchased in the last 6 months relative to the dataset’s snapshot date.  
