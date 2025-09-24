@@ -54,7 +54,7 @@ We classified customers as **Active** or **Churned** based on whether they purch
 The majority of customers are **Churned**, highlighting missed opportunities to **re-monetize existing customers**.  
 This points toward strategies like re-engagement campaigns, loyalty programs, or personalized marketing to lift retention.
 
-**SQL:** See [`SQL Query #2`](./Queries/3_retension_analysis.sql) 
+**SQL:** See [`SQL Query #3`](./Queries/3_retension_analysis.sql) 
 
 **Visualization:**  
 - Retention mix (Active vs. Churned) by cohort:  
