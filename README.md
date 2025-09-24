@@ -1,4 +1,4 @@
-# Customer Analytics Project (SQL + Visualization)
+# Customer Analytics
 
 This project dissects fictitious company sales and customer data using SQL queries and visualizations. 
  
