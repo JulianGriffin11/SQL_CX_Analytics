@@ -17,7 +17,7 @@ Customers were grouped into segments based on spending percentiles:
 **Insight:**  
 High-value customers spend dramatically more on average compared to mid- and low-value customers. This shows where most of the company’s lifetime value comes from.
 
-**SQL:** See [`sql/query_01_customer_segmentation.sql`](./sql/query_01_customer_segmentation.sql)  
+**SQL:** See [`SQL Query 1`](./Queries/1_customer_segmentation.sql)  
 
 **Visualizations:**  
 - Average LTV by segment:  
