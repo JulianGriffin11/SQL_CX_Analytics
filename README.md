@@ -1,4 +1,4 @@
-#  💳 Retail Customer Analytics 💳
+#  💳 SQL Segments: Retail Customer Analytics 💳
 
 ---
 
